@@ -1,0 +1,107 @@
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.timer-container {
+  font-family: 'Montserrat';
+  margin: 50px 30px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-button-container {
+  display: flex;
+  gap: 8px;
+}
+
+.input-button-container input {
+  width: 272px;
+  height: 40px;
+  border: 1px solid rgb(202, 206, 209);
+  border-radius: 4px;
+  padding: 0 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: plum;
+}
+
+.input-button-container input:not(:disabled):focus {
+  background-color: rgb(249, 249, 255);
+  border-color: palevioletred;
+}
+
+#datetime-picker::placeholder {
+  color: transparent;
+}
+
+.input-button-container button {
+  cursor: pointer;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+
+  background: pink;
+}
+
+.input-button-container button:hover,
+.input-button-container button:focus {
+  background-color: plum;
+}
+
+.input-button-container button:disabled {
+  background-color: pink;
+  color: palevioletred;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: purple;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: purple;
+}
